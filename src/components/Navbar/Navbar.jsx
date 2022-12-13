@@ -1,3 +1,4 @@
+import { CartWidget } from "../CartWidget/CartWidget";
 import "./navbar.css";
 
 export const Navbar = () => {
@@ -6,7 +7,7 @@ export const Navbar = () => {
 			{/* LOGO */}
 			<div className='navbar--logo'>🪐</div>
 
-			{/* Secciones */}
+			{/* Secciones de la navbar */}
 			<ul className='navbar--ul'>
 				<li className='navbar--ul--li'>
 					<a className='navbar--ul--li--a' href='#section1'>
@@ -24,6 +25,9 @@ export const Navbar = () => {
 					</a>
 				</li>
 			</ul>
+
+			{/* ICON CART + Cantidad */}
+			<CartWidget />
 		</nav>
 	);
 };
